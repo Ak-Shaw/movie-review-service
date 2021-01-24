@@ -13,8 +13,6 @@ public class DataExtractorTest {
 
     String addMovie = "Add Movie(\"Don\" released in Year 2006 for Genres \"Action\" & \"Comedy\")";
 
-    DataExtractor dataExtractor = new DataExtractor();
-
     Movie movie = new DataExtractor().extractMovieDetails(addMovie);
 
     assertEquals("Don", movie.getName());
